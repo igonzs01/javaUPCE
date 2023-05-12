@@ -1,3 +1,5 @@
+//package programs;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,6 +16,7 @@ public class SumArray {
 		System.out.println("Introduce a number for the colums: ");
 		column= input.nextInt(); 
 		
+		//Calculate the random matrix and it
 		int[][]array= randomArray(row, column);
 		System.out.println("The firts array is: ");
 		for(int i=0; i<array.length; i++) {
@@ -24,7 +27,7 @@ public class SumArray {
 		}
 		
 		
-		
+		//Calculate the second random matrix and it
 		int[][] array2= randomArray(row, column); 
 		System.out.println("The second array is: ");
 		for(int i=0; i<array2.length; i++) {
@@ -34,14 +37,16 @@ public class SumArray {
 			System.out.println();
 		}
 		
-		
+		//Sum the matrixes
 		int[][] result= matrixSum(array, array2); 
+		
+		//Print the result of the sum 
 		matrixPrint(result); 
 		
 	}
 
 
-
+	//Calculate the random numbers for the matrix
 	private static int[][] randomArray(int row, int column) {
 		int[][] array = new int[row][column]; 
 		Random random= new Random(); 
@@ -55,6 +60,7 @@ public class SumArray {
 	}
 	
 	
+	//Sum the both matrixes
 	private static int[][] matrixSum(int[][] array, int[][] array2) {
 		int row= array.length; 
 		int column= array[0].length; 
@@ -80,5 +86,6 @@ public class SumArray {
 		
 		
 	}
+
 	
 }

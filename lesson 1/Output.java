@@ -1,8 +1,10 @@
+//package programs;
+
 import java.util.Scanner;
 
-class Output{
+public class Output {
 
-	static void main(String[] args){
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter your name");
@@ -13,5 +15,7 @@ class Output{
 		String studies = input.nextLine();
 		
 		System.out.println("Hello " + name + ", you study " + studies + " on " + university);
+
 	}
+
 }
